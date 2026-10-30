@@ -8,5 +8,5 @@ COPY . /app
 
 RUN pip install --no-cache-dir -r requirements.txt && \
     pip install --no-cache-dir runpod requests websocket-client
-
+RUN pip install --no-cache-dir huggingface_hub
 CMD ["python", "handler.py"]
