@@ -9,4 +9,4 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt && \
     pip install --no-cache-dir runpod requests websocket-client
 RUN pip install --no-cache-dir huggingface_hub
-CMD ["python", "main.py", "--listen", "0.0.0.0", "--port", "8188"]
+CMD ["python", "main.py", "--listen", "0.0.0.0", "--port", "8188"
